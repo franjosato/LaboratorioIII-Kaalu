@@ -1,9 +1,4 @@
 page-home {
-
-    .social-cards ion-col {
-        padding: 0;
-    }
-
     .bg{
         height: 100%;
         width: 100%;
@@ -11,14 +6,25 @@ page-home {
     }
     //text-center class="bg scroll-content"
 
-    img{
-        background-size: contain;
+    .scroll-content {
+        align-content: center;
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
-   }
+        //overflow-y: hidden !important;
+    }
 
-   ion-card-content, ion-row{
-       background:white;
-   }
+    .card {
+        box-shadow: none;
+        position: absolute;
+        display: block;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        justify-content: center;
+        align-content: center;
+    }
     
 
     .itemli {
@@ -42,6 +48,21 @@ page-home {
         padding-left: 20px;  
     }
 
+    //Usado para que la letra del placeholder sea blanca. Empieza
+
+    .text-input::-moz-placeholder {
+        color: white;
+    }
+      
+    .text-input:-ms-input-placeholder {
+        color: white;
+    }
+      
+    .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: white;
+    }
+
     //Usado para que la letra del placeholder sea blanca. Termine
     
     .img{
@@ -53,8 +74,12 @@ page-home {
 
     //Letra del logo en cabecera
 
-    .price{
-        font-size: 50%!important;
+    .head{
+        margin-bottom: 30px;
+        border-bottom:5px;
+        background: rgba(0, 0, 0, 0);
+        color: white !important;
+        margin-left: 20px; 
     }
 
     .head h1{
@@ -71,5 +96,5 @@ page-home {
     .ion-datetime{
         background: rgba(0, 0, 0, 0);
     }
-    
+
 }
